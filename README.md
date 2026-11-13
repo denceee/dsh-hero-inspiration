@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%"
+  <img src="https://raw.githubusercontent.com/denceee/dsh-hero-inspiration/main/assets/readme/hero.svg" width="100%"
        alt="心灵鸡汤 —— DeepSeek Harness 本地插件。每次新建对话，标题下方多一句鼓励；一轮 40 句不重复，句子可以自己写。右侧示意新对话页的真实结构：标题「探索未至之境」，下面一行由两个圆点夹住的鼓励语，再下面是工作区选择行。">
 </p>
 
 **心灵鸡汤**：每次在 DSH 里新建对话，在「探索未至之境」标题下方显示一句不重复的鼓励。句子可以自己改。
 
 <p align="center">
-  <img src="./assets/readme/preview.png" width="100%"
+  <img src="https://raw.githubusercontent.com/denceee/dsh-hero-inspiration/main/assets/readme/preview.png" width="100%"
        alt="同一个位置的三句不同句子，上半部分是浅色主题、下半部分是深色主题的实际渲染。">
 </p>
 
@@ -23,12 +23,17 @@
 
 ## 安装
 
-包是私有的（`"private": true`），没有发布到 npm，按本地目录安装：
+```bash
+npm install dsh-hero-inspiration
+# 或
+pnpm add dsh-hero-inspiration
+```
 
-1. 克隆本仓库。
-2. 在 DSH 里让 agent 执行插件管理器的 `install_bundle`，目标填克隆下来的目录绝对路径，例如 `<克隆目录>/dsh-hero-inspiration`。
-3. 安装会把这个目录以 `link:` 的方式写进当前 profile 的依赖项和 `dsh.profile.bundles`。
-4. 装好后新开或刷新页面，新建对话就能看到。
+装进 DSH 的 profile 后，把 `dsh-hero-inspiration` 加进 profile 的 `dsh.profile.bundles`，再新开或刷新页面。
+
+在 DSH 里让 agent 用插件管理器的 `install_bundle` 是最省事的方式——包名、配置行和 bundle 注册它都会处理好。
+
+也可以从源码装：克隆本仓库，让 `install_bundle` 的目标填克隆下来的目录绝对路径，例如 `<克隆目录>/dsh-hero-inspiration`。
 
 卸载：在「设置 → 插件」里停用或移除 `dsh-hero-inspiration`。
 
@@ -37,7 +42,7 @@
 设置 → **心灵鸡汤**：
 
 <p align="center">
-  <img src="./assets/readme/settings.svg" width="100%"
+  <img src="https://raw.githubusercontent.com/denceee/dsh-hero-inspiration/main/assets/readme/settings.svg" width="100%"
        alt="设置页只有两件事：一个显示开关，和一个可以直接编辑的句库文本框。文本框里预填了内置的 40 句，右上角显示句库来源与句数。">
 </p>
 
@@ -128,6 +133,7 @@ dsh-hero-inspiration/
 ├── cordis.patch.yml    插入一行 id 为 hero-inspiration 的插件行
 ├── locale/zh.json      插件列表里显示的名称与描述（另有 en.json）
 ├── icon.svg            插件图标
+├── LICENSE             MIT
 ├── assets/readme/      README 用的图：hero.svg、settings.svg、preview.png
 └── test/               上面四套检查
 ```
@@ -136,4 +142,4 @@ dsh-hero-inspiration/
 
 - 这是纯浏览器半的插件：`dsh.client` 声明 `platform: web`，`index.js` 的 `apply()` 是空的，牌堆和配置都存在浏览器里，Host 侧没有状态。
 - 只有会话处于空白新会话时这一行才出现，标题一闪而过是正常的。
-- 仓库目前没有 `LICENSE` 文件。
+- 以 [MIT](LICENSE) 协议发布。
