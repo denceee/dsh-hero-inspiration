@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Hero encouragement">
+  <defs>
+    <linearGradient id="hi-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f6fd8"/>
+      <stop offset="1" stop-color="#22407f"/>
+    </linearGradient>
+    <linearGradient id="hi-sprout" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#8fe3b4"/>
+      <stop offset="1" stop-color="#d8f7c6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#hi-sky)"/>
+  <circle cx="46" cy="18" r="5" fill="#ffe9a8" opacity="0.92"/>
+  <path d="M14 46c6-10 14-14 22-14" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+  <path d="M31 50c0-8 3-14 10-18-7-2-13 1-15 7-1 4 1 8 5 11z" fill="url(#hi-sprout)"/>
+  <path d="M31 50c-1-6-4-10-9-12 6-1 10 2 12 7z" fill="url(#hi-sprout)" opacity="0.82"/>
+  <circle cx="19" cy="20" r="2" fill="#ffffff" opacity="0.5"/>
+</svg>

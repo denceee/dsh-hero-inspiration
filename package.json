@@ -1,0 +1,35 @@
+{
+  "name": "dsh-hero-inspiration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "心灵鸡汤 — 在「探索未至之境」标题下方显示一句鼓励，每次新建对话都换一句，一轮之内不重复；设置里可开关显示并把内置的 40 句换成自己的句库。 Encouragement under the New Session headline, drawn from a persisted shuffled deck so consecutive sessions never repeat.",
+  "type": "module",
+  "scripts": {
+    "test": "node test/hero-inspiration.test.js && node test/placement.test.js && node test/centering.test.js && node test/geometry.test.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

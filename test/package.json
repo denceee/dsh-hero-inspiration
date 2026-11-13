@@ -1,0 +1,4 @@
+{
+  "//": "The suites are CommonJS; this keeps them out of the package's ESM scope.",
+  "type": "commonjs"
+}
