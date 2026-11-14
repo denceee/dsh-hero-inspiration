@@ -1,4 +1,10 @@
 <p align="center">
+  <a href="https://www.npmjs.com/package/dsh-hero-inspiration"><img src="https://img.shields.io/npm/v/dsh-hero-inspiration?color=4a7ff0" alt="npm version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/dsh-hero-inspiration?color=8fe3b4" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-1f2733" alt="DeepSeek Harness plugin">
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/denceee/dsh-hero-inspiration/main/assets/readme/hero.svg" width="100%"
        alt="心灵鸡汤 —— DeepSeek Harness 本地插件。每次新建对话，标题下方多一句鼓励；一轮 40 句不重复，句子可以自己写。右侧示意新对话页的真实结构：标题「探索未至之境」，下面一行由两个圆点夹住的鼓励语，再下面是工作区选择行。">
 </p>
